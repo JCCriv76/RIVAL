@@ -18,8 +18,6 @@ Data Collection:
 8.	Social Vulnerability Index by County (demographics, emergency preparedness)
 9.	Social Distancing compliance metrics (state and county)
 
-START HERE --> RIVAL White Paper.docx
+START HERE --> \Documentation\RIVAL White Paper.docx
 
-RIVAL is an Excel Workbook (Office 365 Version) that is compressed and split into 4x 7zip files.
-
-
+RIVAL is a series of linked Excel Workbooks (Office 365 Version) that outputs a single PDF to \Upload
