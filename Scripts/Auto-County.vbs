@@ -1,6 +1,6 @@
 Option Explicit
 
-Dim xlApp, xlBook, XlSheet
+Dim xlApp, xlBook, pvtTable
 
 Set xlApp = CreateObject("Excel.Application")
 xlApp.Visible = False
@@ -10,27 +10,25 @@ xlApp.Application.DisplayAlerts = False
 'Open Workbook
 Set xlBook = xlApp.Workbooks.Open("C:\Users\jccri\OneDrive\Documents\GitHub\RIVAL\Data Engine-County.xlsx")
 
-Set xlSheet = xlBook.worksheets.item(1)
-
-'xlBook.RefreshAll  'Refreshes automatically when openned
+xlBook.RefreshAll
 
 WScript.Sleep(120000)  'Pause 2 minutes
 
 'Update pivot table
-for each ws in xlBook.Worksheets
-    for each pt in ws.PivotTables
-    pt.RefreshTable
-    next pt
-next ws
+Set pvtTable = xlBook.Sheets("60-Mile").PivotTables("Pivottable1")
+pvtTable.RefreshTable
 
 xlBook.Save  'Save the Workbook
 
 XlBook.Close 'Close the Workbook
 
+MsgBox "Data Engine-County has been updated!"
+
 xlApp.Quit 'Quit Excel
 
-Set xlSheet = Nothing
+Set pvtTable = Nothing
 
 Set xlBook = Nothing
 
 Set xlApp = Nothing
+

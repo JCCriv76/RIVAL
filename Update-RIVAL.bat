@@ -1,4 +1,6 @@
 Echo off
+ren C:\Users\jccri\OneDrive\Documents\GitHub\RIVAL\WWW\source\SDS.csv C:\Users\jccri\OneDrive\Documents\GitHub\RIVAL\WWW\source\SDS.old
+del C:\Users\jccri\OneDrive\Documents\GitHub\RIVAL\WWW\source\SDS.csv
 Echo Getting daily.csv...
 C:\Users\jccri\OneDrive\Documents\GitHub\RIVAL\Curl\bin\curl -X GET "https://covidtracking.com/api/v1/states/daily.csv" --output C:\Users\jccri\OneDrive\Documents\GitHub\RIVAL\WWW\Source\daily.csv
 Echo Complete!
@@ -8,12 +10,9 @@ Echo Complete!
 Echo Getting capacity.csv...
 C:\Users\jccri\OneDrive\Documents\GitHub\RIVAL\scripts\ihme.bat
 Echo Complete!
-#Echo Scraping Social Distancing Scorecard...
-#C:\Users\jccri\OneDrive\Documents\GitHub\RIVAL\scripts\Get-Scrape.bat
+Echo Scraping Social Distancing Scorecard...
+C:\Users\jccri\OneDrive\Documents\GitHub\RIVAL\scripts\Get-Scrape.bat
 Echo Refreshing Data Engine-State
-C:\Users\jccri\OneDrive\Documents\GitHub\RIVAL\scripts\auto-state.vbs
-Echo Refreshing Data Engine-Capacity
-C:\Users\jccri\OneDrive\Documents\GitHub\RIVAL\scripts\auto-capacity.vbs
-Echo Refreshing Data Engine-County
-C:\Users\jccri\OneDrive\Documents\GitHub\RIVAL\scripts\auto-county.vbs
+C:\Users\jccri\OneDrive\Documents\GitHub\RIVAL\scripts\auto-master.vbs
 Echo Complete with all tasks
+Pause

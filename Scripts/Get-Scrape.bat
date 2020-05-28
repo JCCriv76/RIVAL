@@ -3,4 +3,4 @@ C:\Users\jccri\OneDrive\Documents\GitHub\RIVAL\Curl\bin\curl -X GET "https://www
 
 C:\"Program Files\7-Zip\"7z e SDS.gzip -so *.csv > C:\Users\jccri\OneDrive\Documents\GitHub\RIVAL\WWW\source\SDS.csv
 
-
+del C:\Users\jccri\OneDrive\Documents\GitHub\RIVAL\scripts\sds.gzip
