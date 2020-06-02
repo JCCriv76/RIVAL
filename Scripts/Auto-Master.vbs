@@ -17,8 +17,6 @@ xlBook.Save  'Save the Workbook
 
 XlBook.Close 'Close the Workbook
 
-xlApp.Quit 'Quit Excel
-
 Set xlBook = Nothing
 
 'Open Data-Engine Capacity
