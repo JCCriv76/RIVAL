@@ -7,7 +7,7 @@ xlApp.Visible = False
 xlApp.Application.DisplayAlerts = False
 
 'Open Workbook
-Set xlBook = xlApp.Workbooks.Open("C:\Users\jccri\OneDrive\Documents\GitHub\RIVAL\Data Engine-Capacity.xlsx")
+Set xlBook = xlApp.Workbooks.Open("D:\OneDrive\Documents\GitHub\RIVAL\Data Engine-Capacity.xlsx")
 
 xlBook.RefreshAll
 

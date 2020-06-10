@@ -7,7 +7,7 @@ xlApp.Visible = False
 xlApp.Application.DisplayAlerts = False
 
 'Open Data-Engine Social Distancing
-Set xlBook = xlApp.Workbooks.Open("C:\Users\jccri\OneDrive\Documents\GitHub\RIVAL\Data Engine-Social Distancing.xlsx")
+Set xlBook = xlApp.Workbooks.Open("D:\OneDrive\Documents\GitHub\RIVAL\Data Engine-Social Distancing.xlsx")
 
 xlBook.RefreshAll
 
