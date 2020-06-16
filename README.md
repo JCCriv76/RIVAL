@@ -20,4 +20,4 @@ Data Collection:
 
 START HERE --> \Documentation\RIVAL White Paper.docx
 
-RIVAL is a series of linked Excel Workbooks (Office 365 Version) that outputs a single PDF to \Upload
+RIVAL is a series of linked Excel Workbooks (Office 365 Version) that outputs RIVAL-Active.pdf and RIVAL-ANG.pdf
